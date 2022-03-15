@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movies List</title>
+</head>
+<body bgcolor="#87ceeb">
+<h1 style="color: white; text-align: center"><u><b>Movies</b></u></h1>
+<% moviesList.forEach((m) => { %>
+    <ol style="display: flex">
+        <ul>Title: <%= m.title %></ul>
+        <ul>Genre: <%= m.genre %> </ul>
+        <ul>Year: <%= m.year %> </ul><br>
+    </ol>
+<% }); %>
+</body>
+</html>
